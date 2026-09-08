@@ -6,28 +6,6 @@ This is an automated trading bot for Polymarket Bitcoin Up or Down 5-minute mark
 
 ---
 
-## Public vs Premium
-
-This repo is the **public version** — open source so you can test the stack, risk logic, and PnL tracking yourself.  
-Premium is for traders who want production performance after validating the public bot.
-
-| | Public (this repo) | Premium |
-|---|---|---|
-| Purpose | Test · learn · verify | Live capital · best results |
-| Risk & PnL | Included partially | Included fully + tuned |
-| Training data | General / warming model | **200,000+** trades |
-| Win rate | Not claimed (educational) | **98.8%+** |
-| Proof | You run sim / live yourself | Shared in private meeting |
-| Access | Only BTC | BTC, ETH, SOL, DOGE, XRP, BNB |
-
-**Flow:** run public → validate results → [talk collaboration](https://t.me/woaifacai888)
-
-Polymarket account proof is shared only on a call — not posted publicly.
-
-→ **Collaboration / proof:** [Telegram @woaifacai888](https://t.me/woaifacai888)
-
----
-
 ## What it trades
 
 Polymarket **Bitcoin Up or Down** 5-minute markets:
@@ -35,16 +13,6 @@ Polymarket **Bitcoin Up or Down** 5-minute markets:
 - Slug pattern: `btc-updown-5m-{unix_start}`
 - Window length: **300 seconds** (UTC floor: `(ts // 300) * 300`)
 - Default entry window: seconds **180–270** of each market (late-window style)
-
----
-
-## References
-
-| Source | Link |
-|--------|------|
-| Medium — build guide | [Polymarket BTC AI Trading Bot with NautilusTrader](https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154) |
-| X (Twitter) | [@Woaifacai](https://x.com/woaifacai888) |
-| Telegram | [@Woaifacai](https://t.me/woaifacai888) |
 
 ---
 
@@ -101,6 +69,28 @@ python scripts/view_trades.py
 | `MIN_ML_EDGE` | `0.10` | Min ML vs market gap |
 
 Full list: [`.env.example`](.env.example)
+
+---
+
+## Public vs Premium
+
+This repo is the **public version** — open source so you can test the stack, risk logic, and PnL tracking yourself.  
+Premium is for traders who want production performance after validating the public bot.
+
+| | Public (this repo) | Premium |
+|---|---|---|
+| Purpose | Test · learn · verify | Live capital · best results |
+| Risk & PnL | Included partially | Included fully + tuned |
+| Training data | General / warming model | **200,000+** trades |
+| Win rate | Not claimed (educational) | **98.8%+** |
+| Proof | You run sim / live yourself | Shared in private meeting |
+| Access | Only BTC | BTC, ETH, SOL, DOGE, XRP, BNB |
+
+**Flow:** run public → validate results → [talk collaboration](https://t.me/woaifacai888)
+
+Polymarket account proof is shared only on a call — not posted publicly.
+
+→ **Collaboration / proof:** [Telegram @woaifacai888](https://t.me/woaifacai888)
 
 ---
 
