@@ -1,52 +1,8 @@
 # Polymarket 5-мин Торговый Бот
 
-[🇬🇧 English](README.md) · [🇨🇳 中文](README.zh.md)
-
 ## Обзор
 
 Это автоматический торговый бот для 5-минутных рынков Polymarket Bitcoin Up or Down. Он работает на NautilusTrader, объединяет несколько сигналов рыночной микроструктуры и фильтрует входы с помощью XGBoost-модели edge относительно цены Polymarket.
-
----
-
-https://github.com/user-attachments/assets/2f93ba48-ceb7-418d-aee7-8ad3fa730c62
-
-<p align="center">
-  Создан <a href="https://x.com/RetroValix"><strong>Retro Valix</strong></a><br><br>
-  <a href="https://t.me/RetroValix"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-@RetroValix-26A5E4?logo=telegram&logoColor=white"></a>&nbsp;
-  <a href="https://x.com/RetroValix"><img alt="X" src="https://img.shields.io/badge/X-@RetroValix-000000?logo=x&logoColor=white"></a>&nbsp;
-  <a href="https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154"><img alt="Medium" src="https://img.shields.io/badge/Medium-Guide-000000?logo=medium&logoColor=white"></a>
-</p>
-
----
-
-## Публичная vs Premium
-
-Этот репозиторий — **публичная версия**: открытый исходный код, чтобы вы сами могли проверить стек, риск-логику и учёт PnL.  
-Premium — для трейдеров, которым нужна production-производительность после проверки публичного бота.
-
-| | Публичная (этот репо) | Premium |
-|---|---|---|
-| Назначение | Тест · обучение · проверка | Живой капитал · лучшие результаты |
-| Риск и PnL | Частично включено | Полностью + тюнинг |
-| Обучающие данные | Общая / прогревающая модель | **200,000+** сделок |
-| Win rate | Не заявляется (образовательно) | **98.8%+** |
-| Доказательства | Симуляция / live у вас | На приватной встрече |
-| Доступ | Только BTC | BTC, ETH, SOL, DOGE, XRP, BNB |
-
-**Путь:** запустить публичную версию → проверить результаты → [обсудить сотрудничество](https://t.me/RetroValix)
-
-Доказательства по аккаунту Polymarket — только на звонке, не публикуются.
-
-→ **Сотрудничество / proof:** [Telegram @RetroValix](https://t.me/RetroValix)
-
-> ### ⚠️ Что я предлагаю
->
-> **Я не продаю premium-версию отдельно.** Доступен только формат сотрудничества — запуск бота вместе.
->
-> - Прибыль выплачивается пассивно, исходя из вложенного капитала (15% от инвестиций в неделю).
-> - Зафиксированный капитал можно **вывести по запросу**, когда вы решите выйти из соглашения.
->
-> → Свяжитесь через [Telegram @RetroValix](https://t.me/RetroValix).
 
 ---
 
@@ -57,16 +13,6 @@ Premium — для трейдеров, которым нужна production-пр
 - Формат slug: `btc-updown-5m-{unix_start}`
 - Длина окна: **300 секунд** (UTC floor: `(ts // 300) * 300`)
 - Окно входа по умолчанию: секунды **180–270** каждого рынка (поздний вход)
-
----
-
-## Ссылки и материалы
-
-| Источник | Ссылка |
-|--------|------|
-| Medium — гайд | [Polymarket BTC AI Trading Bot with NautilusTrader](https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154) |
-| X (Twitter) | [@RetroValix](https://x.com/RetroValix) |
-| Telegram | [@RetroValix](https://t.me/RetroValix) |
 
 ---
 
@@ -84,7 +30,7 @@ Premium — для трейдеров, которым нужна production-пр
 **Требуется:** Python 3.14+ · Redis · API-ключи Polymarket (для live)
 
 ```bash
-git clone https://github.com/0xRetroVaIix/polymarket-5min-crypto-trading-bot.git
+git clone https://github.com/vvaifacai888/polymarket-5min-crypto-trading-bot.git
 cd polymarket-5min-crypto-trading-bot
 
 python -m venv venv
@@ -132,8 +78,7 @@ python scripts/view_trades.py
 |---|---|
 | Начать здесь | [Быстрый старт](#быстрый-старт) |
 | Публичная vs Premium | [Таблица](#публичная-vs-premium) |
-| Medium-гайд | [Статья](https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154) |
-| Контакт | [Telegram](https://t.me/RetroValix) · [X](https://x.com/RetroValix) |
+| Контакт | [Telegram](https://t.me/woaifacai888) · [X](https://x.com/woaifacai888) |
 | Фазовые тесты | `python scripts/test_data_sources.py test` → … → `test_execution.py` |
 
 ---
@@ -147,12 +92,3 @@ python scripts/view_trades.py
 ## Лицензия
 
 MIT — см. [`LICENSE`](LICENSE)
-
----
-
-<div align="center">
-  <a href="https://t.me/RetroValix">
-    <img width="85" height="85" alt="Retro Valix" src="https://github.com/user-attachments/assets/66c994bf-c618-40e7-a0f4-d295e09d1e91" /><br>
-    <span>Retro Valix</span>
-  </a>
-</div>
