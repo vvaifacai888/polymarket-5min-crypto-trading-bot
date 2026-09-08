@@ -1,43 +1,8 @@
 # Polymarket 5 分钟交易机器人
 
-[🇬🇧 English](README.md) · [🇷🇺 Русский](README.ru.md)
-
 ## 概述
 
 这是一个针对 Polymarket Bitcoin Up or Down 5 分钟市场的自动交易机器人。基于 NautilusTrader 运行，融合多种市场微观结构信号，并通过 XGBoost 优势模型相对 Polymarket 价格进行入场过滤。
-
----
-
-https://github.com/user-attachments/assets/77ec887f-8643-4b4d-b762-c2cb6013b96f
-
-<p align="center">
-  由 <a href="https://x.com/RetroValix"><strong>Retro Valix</strong></a> 打造<br><br>
-  <a href="https://t.me/RetroValix"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-@RetroValix-26A5E4?logo=telegram&logoColor=white"></a>&nbsp;
-  <a href="https://x.com/RetroValix"><img alt="X" src="https://img.shields.io/badge/X-@RetroValix-000000?logo=x&logoColor=white"></a>&nbsp;
-  <a href="https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154"><img alt="Medium" src="https://img.shields.io/badge/Medium-Guide-000000?logo=medium&logoColor=white"></a>
-</p>
-
----
-
-## 公开版 vs 高级版
-
-本仓库为**公开版** — 开源，便于你自行测试技术栈、风控逻辑与盈亏跟踪。  
-高级能力面向已验证公开版、希望获得生产级表现的交易者。
-
-| | 公开版（本仓库） | 高级版 |
-|---|---|---|
-| 用途 | 测试 · 学习 · 验证 | 实盘资金 · 最佳表现 |
-| 风控与盈亏 | 部分包含 | 完整包含 + 调优 |
-| 训练数据 | 通用 / 预热模型 | **200,000+** 笔交易 |
-| 胜率 | 不作宣称（教育用途） | **98.8%+** |
-| 证明 | 自行运行模拟 / 实盘 | 私下会议分享 |
-| 标的范围 | 仅 BTC | BTC、ETH、SOL、DOGE、XRP、BNB |
-
-**流程：** 运行公开版 → 验证结果 → [洽谈协作](https://t.me/RetroValix)
-
-Polymarket 账户证明仅在通话中分享 — 不公开张贴。
-
-→ **协作 / 证明：** [Telegram @RetroValix](https://t.me/RetroValix)
 
 ---
 
@@ -48,16 +13,6 @@ Polymarket **Bitcoin Up or Down** 5 分钟市场：
 - Slug 格式：`btc-updown-5m-{unix_start}`
 - 窗口时长：**300 秒**（UTC 向下取整：`(ts // 300) * 300`）
 - 默认入场窗口：每个市场第 **180–270** 秒（偏后期入场）
-
----
-
-## 参考链接
-
-| 来源 | 链接 |
-|--------|------|
-| Medium — 构建指南 | [Polymarket BTC AI Trading Bot with NautilusTrader](https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154) |
-| X (Twitter) | [@RetroValix](https://x.com/RetroValix) |
-| Telegram | [@RetroValix](https://t.me/RetroValix) |
 
 ---
 
@@ -75,7 +30,7 @@ Polymarket **Bitcoin Up or Down** 5 分钟市场：
 **要求：** Python 3.14+ · Redis · Polymarket API 密钥（实盘）
 
 ```bash
-git clone https://github.com/0xRetroVaIix/polymarket-5min-crypto-trading-bot.git
+git clone https://github.com/vvaifacai888/polymarket-5min-crypto-trading-bot.git
 cd polymarket-5min-crypto-trading-bot
 
 python -m venv venv
@@ -123,8 +78,7 @@ python scripts/view_trades.py
 |---|---|
 | 从这里开始 | [快速开始](#快速开始) |
 | 公开版 vs 高级版 | [对照表](#公开版-vs-高级版) |
-| Medium 指南 | [文章](https://medium.com/@RetroValix/polymarket-btc-15-minute-ai-trading-bot-with-nautilustrader-c897bf225154) |
-| 联系 | [Telegram](https://t.me/RetroValix) · [X](https://x.com/RetroValix) |
+| 联系 | [Telegram](https://t.me/woaifacai888) · [X](https://x.com/woaifacai888) |
 | 分阶段测试 | `python scripts/test_data_sources.py test` → … → `test_execution.py` |
 
 ---
@@ -139,11 +93,3 @@ python scripts/view_trades.py
 
 MIT — 见 [`LICENSE`](LICENSE)
 
----
-
-<div align="center">
-  <a href="https://t.me/RetroValix">
-    <img width="85" height="85" alt="Retro Valix" src="https://github.com/user-attachments/assets/66c994bf-c618-40e7-a0f4-d295e09d1e91" /><br>
-    <span>Retro Valix</span>
-  </a>
-</div>
